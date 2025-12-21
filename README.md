@@ -1,1 +1,2 @@
-# Our solutions to the 2025 Advent of Code [https://adventofcode.com/2025](challenges)!
+## Advent of Code 2025
+Our solutions to the 2025 Advent of Code [challenges](https://adventofcode.com/2025)!
