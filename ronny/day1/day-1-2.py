@@ -1,0 +1,26 @@
+zeroes = 0
+dial_pos = 50
+
+with open("data.txt") as file:
+    
+    for move in file:
+        move = move.strip()
+        direction = move[0]
+        distance = int(move[1:])
+
+        if direction == "R":
+            step = 1
+        else:
+            step = -1
+
+        
+        for _ in range(distance):
+            dial_pos += step
+            dial_pos %= 100   # wrap every click
+
+            if dial_pos == 0:
+                zeroes += 1
+
+print(zeroes)
+
+
