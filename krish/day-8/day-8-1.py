@@ -3,11 +3,11 @@ import math
 lines = []
 with open("input-8.txt", "r") as f:
     for line in f:
-        l = line.strip().split(",")
-        for i in range(len(l)):
-            l[i] = int(l[i])
-        l = tuple(l)
-        lines.append(l)
+        li = line.strip().split(",")
+        for i in range(len(li)):
+            li[i] = int(li[i])
+        li = tuple(li)
+        lines.append(li)
 
 
 def calc_distance(arr1, arr2):
